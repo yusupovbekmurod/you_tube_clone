@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.material-icons {
+    color: rgb(96, 96, 96);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 15px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__left img {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.header i {
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.header__search .header__search-wrapper {
+    border: 1px solid #ddd;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header__search input {
+    width: 500px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    // height: 100%;
+}
+
+.header__search .submit {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.header__modal-closeBtn {
+    margin-left: auto;
+}
+
+.modal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.modal-open {
+    width: 500px;
+    height: 400px;
+    top: 170px;
+    background-color: rgb(199, 198, 198);
+    position: relative;
+    z-index: 500;
+    border: 1px solid rgb(231, 228, 228);
+}
+
+.modal-close {
+    display: none;
+}
