@@ -3,16 +3,13 @@ import Header from "../../Components/Header/Header";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import VideoCard from "../../Components/VideoCard/VideoCard";
 import {instance} from "../../Api/intence";
+import { useGlobalContext } from '../../Context/context';
 
 
 const Home = () => {
+     const {data} = useGlobalContext();
+     
 
-    const [videoData, setVideoData] = useState([])
-
-  useEffect(() => {
-    instance.get("/trending?type=C%20g%2C%20n%2C%20mo&hl=en&gl=US")
-      .then(response => setVideoData(response.data.contents))
-  }, []);
 
     return (
         <div>
@@ -23,7 +20,7 @@ const Home = () => {
                 <div class="videos">
                     <div class="videos__container">
                         {
-                            videoData.map(item => {
+                            data.map(item => {
                                 return <VideoCard items={item.video} />
                             })
                         }
