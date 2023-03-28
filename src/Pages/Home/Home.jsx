@@ -3,7 +3,7 @@ import Header from "../../Components/Header/Header";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import VideoCard from "../../Components/VideoCard/VideoCard";
 import {instance} from "../../Api/intence";
-import { useGlobalContext } from '../../Context/context';
+import { useGlobalContext } from '../../Context/homeContext';
 
 
 const Home = () => {
